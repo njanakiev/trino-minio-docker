@@ -2,7 +2,7 @@
 
 Minimal example to run Trino with Minio and the Hive standalone metastore on Docker.
 
-# Installation and Setup
+## Installation and Setup
 
 Install [s3cmd](https://s3tools.org/s3cmd) with:
 
@@ -87,3 +87,7 @@ Query the newly created table with:
 SHOW TABLES IN minio.iris;
 SELECT * FROM minio.iris.iris_parquet LIMIT 5;"
 ```
+
+# License
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) for details.
