@@ -52,10 +52,10 @@ s3cmd --config minio.s3cfg la
 
 ## Access Trino with CLI and Prepare Table
 
-Download trino cli with:
+Download the [Trino CLI](https://trino.io/docs/current/installation/cli.html) with:
 
 ```bash
-wget https://repo1.maven.org/maven2/io/trino/trino-cli/352/trino-cli-351-executable.jar \
+wget https://repo1.maven.org/maven2/io/trino/trino-cli/356/trino-cli-356-executable.jar \
   -O trino
 chmod +x trino  # Make it executable
 ```
