@@ -36,6 +36,7 @@ DNS-style bucket+hostname:port template for accessing a bucket [%(bucket)s.s3.am
 Encryption password:
 Path to GPG program [/usr/bin/gpg]:
 Use HTTPS protocol [Yes]: no
+HTTP Proxy server name:
 ```
 
 To create a bucket and upload data to minio, type:
