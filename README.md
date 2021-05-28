@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS minio.iris.iris_parquet (
   class        VARCHAR
 )
 WITH (
-  external_location = 's3a://iris/iris_parquet',
+  external_location = 's3a://iris/',
   format = 'PARQUET'
 );"
 ```
