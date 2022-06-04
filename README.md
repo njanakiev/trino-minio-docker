@@ -2,7 +2,7 @@
 
 Minimal example to run Trino with Minio and the Hive standalone metastore on Docker. The data in this tutorial was converted into an [Apache Parquet](https://parquet.apache.org/) file from the famous [Iris data set](https://archive.ics.uci.edu/ml/datasets/iris).
 
-# Installation and Setup
+## Installation and Setup
 
 Install [s3cmd](https://s3tools.org/s3cmd) with:
 
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS minio.iris.iris_parquet (
   class        VARCHAR
 )
 WITH (
-  external_location = 's3a://iris/iris_parquet',
+  external_location = 's3a://iris/',
   format = 'PARQUET'
 );"
 ```
@@ -87,3 +87,7 @@ Query the newly created table with:
 SHOW TABLES IN minio.iris;
 SELECT * FROM minio.iris.iris_parquet LIMIT 5;"
 ```
+
+# License
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) for details.
